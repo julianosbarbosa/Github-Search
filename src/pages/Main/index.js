@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Form, SubmitButton, List } from './style';
+import Container from '../../components/Container/index';
+import { Form, SubmitButton, List } from './style';
 import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
@@ -40,8 +41,6 @@ class Main extends Component {
       newRepo: '',
       loading: false,
     });
-
-    console.log(response.data);
   };
 
   render() {
